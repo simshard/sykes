@@ -43,7 +43,7 @@ if (isset($_POST['searchform'])&& !empty($_POST)) {
     $sleeps=isset($_POST['sleeps'])?  mysqli_real_escape_string($mysqli, $_POST['sleeps']):null;
     $pets=isset($_POST['pets']) ? $_POST['pets']:0;
     $beach=isset($_POST['beach']) ? $_POST['beach']:0;
-    $datepicker=isset($_POST['datepicker'])? $_POST['datepicker']:null;
+    $datepicker=isset($_POST['datepicker'])? mysqli_real_escape_string($mysqli,$_POST['datepicker']):null;
 
     $offset=0;
     $pagelimit = 2;
