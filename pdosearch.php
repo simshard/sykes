@@ -124,13 +124,9 @@ $params['searchterm']= $searchterm;
   $stmt = $pdo->prepare("$query");
   $stmt->execute($params);
 
- 
 
-  // $resultx = $stmt->fetchAll(PDO::FETCH_OBJ);
-  // console_log($resultx);
-  //echo('length:'.count($resultx));
-
- $output='';$i=0;
+ $output='';
+ $i=0;
 
  while ($result = $stmt->fetch(PDO::FETCH_OBJ)) {
      
