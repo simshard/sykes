@@ -7,4 +7,6 @@ Stackoverflow people told me I should have used PDO not mysqli but I was out of 
 Pagination not finished  
 code is very procedural but I would have extracted pagination code to a class if i had  finished
 
-bookings/ date  NOT BETWEEN solution is not working
+bookings/ date  NOT BETWEEN solution is not working and other minor bugs
+
+UPDATE sunday added pdosearch.php - a version  using PDO to create a prepared statement 
